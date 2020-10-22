@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Net;
+﻿using System.Net;
 using System.Net.Sockets;
-using System.Text;
 
 namespace Chord
 {
@@ -20,6 +17,8 @@ namespace Chord
 
         public Connection(IPAddress clientAddress, IPHostEntry clientHost, IPAddress serverAddress, IPHostEntry serverHost, int portNumber)
         {
+            _portNumber = portNumber;
+
             _serverHost = serverHost;
             _serverAddress = serverAddress;
             _serverEndPoint = new IPEndPoint(serverAddress, portNumber);

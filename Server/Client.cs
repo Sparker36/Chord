@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Chord
+﻿namespace Chord
 {
     public class Client
     {
-    }
-}
+        private ConnectionHandler _connectionHandler;
+        private Connection _connection;
+
+    }//client
+}//chord
